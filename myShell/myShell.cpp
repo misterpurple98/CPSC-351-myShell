@@ -32,10 +32,10 @@ int main()
 		std::cout << "\n==> ";
 		fgets(userIn, 40, stdin);
 
-		
+		// Pull command from user input
 		token = strtok_s(userIn, " \n", &ctxt);
 
-
+		// Store the pulled token into tknArgument and pull the next argument
 		while (token != NULL) {
 			tknArgument.push_back(_strdup(token));
 			memset(token, 0, strlen(token));
@@ -45,6 +45,7 @@ int main()
 		if (tknArgument[0] != NULL) {
 			bool valid = false;
 
+			// Ensure thread will only be created from a set of commands
 			for (const char* vCmd : validCMD) {
 				if (strcmp(vCmd, tknArgument[0]) == 0) {
 					valid = true;
@@ -55,6 +56,7 @@ int main()
 				break;
 			};
 
+			// De-tokenize the command so system() will run
 			for (char* str : tknArgument) {
 				strcat_s(userIn, 40, str);
 				if (strcmp(str, tknArgument.back()) != 0) {
