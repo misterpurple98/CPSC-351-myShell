@@ -34,8 +34,8 @@ shown below:
 Welcome to myShell
 ==> dir
 Volume in drive C is Windows
-Volume Serial Number is 301D-8616
-Directory of c:\Users\spati\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1
+Volume Serial Number is *********
+Directory of c:\Users\-----\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1
 08/27/2016 08:59 AM     <DIR>              .
 08/27/2016 08:59 AM     <DIR>               ..
 08/27/2016 08:59 AM                    1,686 ConsoleApplication1.cpp
