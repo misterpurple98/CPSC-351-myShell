@@ -1,5 +1,6 @@
 // myShell.cpp : Simple Command Line Interpreter
-// Name : Oliver Escalante
+// Names : Oliver Escalante, Jacob Berry, Nicholas Haga
+// Group : 1
 
 #include <Windows.h>
 #include <iostream>
@@ -31,6 +32,7 @@ int main()
 		std::vector<char*> tknArgument;
 		std::cout << "\n==> ";
 		fgets(userIn, 40, stdin);
+		std::cout << '\n';
 
 		// Pull command from user input
 		token = strtok_s(userIn, " \n", &ctxt);
